@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Jewelry - Украшения ручной работы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-gem"></i>
+                <span>Sunrise Jewelry</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Главная</a>
+                <a href="catalog.html">Каталог</a>
+                <a href="about.html">О мастере</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="cart.html" class="cart-btn">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Герой-секция -->
+    <header class="hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <h1>Уникальные украшения ручной работы</h1>
+                <p>Каждое изделие создается с любовью и вниманием к деталям</p>
+                <a href="catalog.html" class="btn-hero">Смотреть каталог</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Категории -->
+    <section class="categories">
+        <div class="container">
+            <h2>Коллекции</h2>
+            <div class="categories-grid">
+                <a href="catalog.html?category=rings" class="category-card">
+                    <div class="category-img rings"></div>
+                    <h3>Кольца</h3>
+                    <p>От нежных до statement</p>
+                </a>
+                <a href="catalog.html?category=earrings" class="category-card">
+                    <div class="category-img earrings"></div>
+                    <h3>Серьги</h3>
+                    <p>Разные формы и размеры</p>
+                </a>
+                <a href="catalog.html?category=bracelets" class="category-card">
+                    <div class="category-img bracelets"></div>
+                    <h3>Браслеты</h3>
+                    <p>Плетеные и металлические</p>
+                </a>
+                <a href="catalog.html?category=necklaces" class="category-card">
+                    <div class="category-img necklaces"></div>
+                    <h3>Колье и подвески</h3>
+                    <p>Центральные акценты образа</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Популярные товары -->
+    <section class="featured" id="catalog">
+        <div class="container">
+            <h2>Популярные работы</h2>
+            <div class="products-grid" id="products-container">
+                <div class="product-loader">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Загрузка украшений...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О мастере -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>О мастере</h2>
+                    <p>Привет! Меня зовут Анна, и вот уже 7 лет я создаю украшения, которые становятся частью ваших историй.</p>
+                    <p>Каждое изделие начинается с эскиза, созданного под вдохновением от природы, архитектуры или эмоций.</p>
+                    <p>Использую только качественные материалы: серебро 925 пробы, натуральные камни, японский бисер.</p>
+                    <a href="about.html" class="btn-about">Узнать больше</a>
+                </div>
+                <div class="about-image">
+                    <img src="img/1.jpg" alt="Фото мастера" style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Процесс создания -->
+    <section class="process">
+        <div class="container">
+            <h2>Процесс создания</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <h3>Эскиз</h3>
+                    <p>Проработка дизайна и концепции</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>Материалы</h3>
+                    <p>Подбор камней и металлов</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Изготовление</h3>
+                    <p>Ручная работа с деталями</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Контроль</h3>
+                    <p>Проверка качества</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-gem"></i>
+                        <span>Sunrise Jewelry</span>
+                    </div>
+                    <p>Украшения ручной работы с 2017 года</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> hello@sunrise-jewelry.ru</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Ювелирная, 15</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Соцсети</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Подписка</h4>
+                    <p>Узнавайте о новинках первыми</p>
+                    <div class="subscribe">
+                        <input type="email" placeholder="Ваш email">
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Мастерская Sunrise Jewelry.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

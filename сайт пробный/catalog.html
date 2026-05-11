@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог украшений - Sunrise Jewelry</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-gem"></i>
+                <span>Sunrise Jewelry</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Главная</a>
+                <a href="catalog.html" class="active">Каталог</a>
+                <a href="about.html">О мастере</a>
+                <a href="contacts.html">Контакты</a>
+                <a href="cart.html" class="cart-btn">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Заголовок каталога -->
+    <section class="catalog-header">
+        <div class="container">
+            <h1>Каталог украшений</h1>
+            <p>Ручная работа из натуральных материалов</p>
+        </div>
+    </section>
+
+    <!-- Каталог с фильтрацией -->
+    <section class="catalog-section">
+        <div class="container">
+            <div class="catalog-layout">
+                <!-- Боковая панель с фильтрами -->
+                <aside class="filters-sidebar">
+                    <h3><i class="fas fa-filter"></i> Фильтры</h3>
+                    
+                    <!-- Фильтр по категориям -->
+                    <div class="filter-group">
+                        <h4>Категория</h4>
+                        <div class="filter-options">
+                            <label class="filter-checkbox">
+                                <input type="checkbox" value="all" checked class="category-filter" id="filter-all">
+                                <span>Все товары</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" value="rings" class="category-filter">
+                                <span>Кольца</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" value="earrings" class="category-filter">
+                                <span>Серьги</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" value="bracelets" class="category-filter">
+                                <span>Браслеты</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" value="necklaces" class="category-filter">
+                                <span>Колье и подвески</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Фильтр по цене -->
+                    <div class="filter-group">
+                        <h4>Цена</h4>
+                        <div class="price-range">
+                            <input type="range" id="price-min" min="0" max="20000" step="500" value="0">
+                            <input type="range" id="price-max" min="0" max="20000" step="500" value="20000">
+                            <div class="price-values">
+                                <span>от <span id="min-price-val">0</span> ₽</span>
+                                <span>до <span id="max-price-val">20000</span> ₽</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Фильтр по материалу -->
+                    <div class="filter-group">
+                        <h4>Материал</h4>
+                        <div class="filter-options">
+                            <label class="filter-checkbox">
+                                <input type="checkbox" value="silver" class="material-filter">
+                                <span>Серебро 925</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" value="gold" class="material-filter">
+                                <span>Золото 585</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" value="stone" class="material-filter">
+                                <span>Натуральные камни</span>
+                            </label>
+                            <label class="filter-checkbox">
+                                <input type="checkbox" value="beads" class="material-filter">
+                                <span>Бисер</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="btn-reset-filters" id="reset-filters">
+                        <i class="fas fa-undo"></i> Сбросить все
+                    </button>
+                </aside>
+
+                <!-- Сетка товаров -->
+                <div class="products-container">
+                    <div class="products-header">
+                        <p class="products-count" id="products-count">Показано: 0 товаров</p>
+                        <select id="sort-select" class="sort-select">
+                            <option value="default">По умолчанию</option>
+                            <option value="price-asc">Сначала дешевле</option>
+                            <option value="price-desc">Сначала дороже</option>
+                            <option value="name-asc">По названию (А-Я)</option>
+                        </select>
+                    </div>
+
+                    <div class="products-grid" id="catalog-products">
+                        <div class="loader">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            <p>Загрузка украшений...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-gem"></i>
+                        <span>Sunrise Jewelry</span>
+                    </div>
+                    <p>Украшения ручной работы с 2017 года</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> hello@sunrise-jewelry.ru</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Москва, ул. Ювелирная, 15</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Соцсети</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Подписка</h4>
+                    <p>Узнавайте о новинках первыми</p>
+                    <div class="subscribe">
+                        <input type="email" placeholder="Ваш email">
+                        <button><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Мастерская Sunrise Jewelry. Дипломный проект.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="catalog.js"></script>
+</body>
+</html>
