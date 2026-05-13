@@ -8,7 +8,7 @@ const productsData = [
         oldPrice: null,
         material: ["silver"],
         description: "Серебряное кольцо с лунным камнем",
-        image: "img/6.jpg"
+        image: "https://images.unsplash.com/photo-1602756048963-b3a6c8587b6a?w=400"
     },
     {
         id: 2,
