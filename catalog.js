@@ -8,7 +8,7 @@ const productsData = [
         oldPrice: null,
         material: ["silver"],
         description: "Серебряное кольцо с лунным камнем",
-        image: "https://images.unsplash.com/photo-1602756048963-b3a6c8587b6a?w=400"
+        image: "img/6.jpg"
     },
     {
         id: 2,
@@ -18,7 +18,7 @@ const productsData = [
         oldPrice: 5900,
         material: ["silver"],
         description: "Серьги с аквамарином",
-        image: "https://images.unsplash.com/photo-1598300056393-4aac492f4344?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+        image: "img/7.jpg"
     },
     {
         id: 3,
@@ -28,7 +28,7 @@ const productsData = [
         oldPrice: null,
         material: ["silver"],
         description: "Плетёный браслет",
-        image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+        image: "img/8.jpg"
     },
     {
         id: 4,
@@ -38,14 +38,139 @@ const productsData = [
         oldPrice: 15000,
         material: ["silver", "stone"],
         description: "Колье с аметистами",
-        image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-    }
+        image: "img/9.jpg"
+    },
+{
+    id: 5,                           // номер товара (новый, уникальный)
+    name: "Кольцо с пионом",          // название
+    category: "rings",               // категория: rings, earrings, bracelets, necklaces
+    price: 2900,                     // цена
+    oldPrice: null,                  // старая цена (если есть скидка, иначе null)
+    material: ["polymer clay","silver"],     // материалы: silver, gold, stone, beads
+    description: "Цветы созданы из запекаемой полимерной глины, размер кольца регулируется",   // краткое описание
+    image: "img/5.jpg"   // путь к фото в папке img
+},
+    {
+    id: 6,                           // номер товара (новый, уникальный)
+    name: "Серги с пионом",          // название
+    category: "earrings",               // категория: rings, earrings, bracelets, necklaces
+    price: 4900,                     // цена
+    oldPrice: null,                  // старая цена (если есть скидка, иначе null)
+    material: ["polymer clay", "gold"],   // материалы: silver, gold, stone, beads
+    description: "Цветы созданы из запекаемой полимерной глины ",   // краткое описание
+    image: "img/3.jpg"   // путь к фото в папке img
+},
+{
+    id: 7,                           // номер товара (новый, уникальный)
+    name: "Браслет с пионом",          // название
+    category: "bracelets",               // категория: rings, earrings, bracelets, necklaces
+    price: 4900,                     // цена
+    oldPrice: null,                  // старая цена (если есть скидка, иначе null)
+    material: ["polymer clay", "gold"],   // материалы: silver, gold, stone, beads
+    description: "Цветы созданы из запекаемой полимерной глины",   // краткое описание
+    image: "img/2.jpg"   // путь к фото в папке img
+},
+{
+    id: 8,                           // номер товара (новый, уникальный)
+    name: "Подвеска с пионом",          // название
+    category: "necklaces",               // категория: rings, earrings, bracelets, necklaces
+    price: 2900,                     // цена
+    oldPrice: null,                  // старая цена (если есть скидка, иначе null)
+    material: ["polymer clay","silver"],   // материалы: silver, gold, stone, beads
+    description: "Цветы созданы из запекаемой полимерной глины",   // краткое описание
+    image: "img/4.jpg"   // путь к фото в папке img
+},
+{
+    id: 9,                           // номер товара (новый, уникальный)
+    name: "Звёздный круг",          // название
+    category: "necklaces",               // категория: rings, earrings, bracelets, necklaces
+    price: 3750,                     // цена
+    oldPrice: 5000,                  // старая цена (если есть скидка, иначе null)
+    material: ["silver", "beads"],   // материалы: silver, gold, stone, beads
+    description: "Комплект из трёх подвесок с круглыми камнями",   // краткое описание
+    image: "img/11.jpg"   // путь к фото в папке img
+},
+{
+    id: 10,                           // номер товара (новый, уникальный)
+    name: "Золотая нить",          // название
+    category: "rings",               // категория: rings, earrings, bracelets, necklaces
+    price: 5000,                     // цена
+    oldPrice: 6500,                  // старая цена (если есть скидка, иначе null)
+    material: ["gold", "stone"],   // материалы: silver, gold, stone, beads
+    description: "Золотое кольцо",   // краткое описание
+    image: "img/10.jpg"   // путь к фото в папке img
+},
+{
+    id: 11,                           // номер товара (новый, уникальный)
+    name: "Жемчужная классика",          // название
+    category: "necklaces",               // категория: rings, earrings, bracelets, necklaces
+    price: 2500,                     // цена
+    oldPrice: 4000,                  // старая цена (если есть скидка, иначе null)
+    material: ["silver", "stone"],   // материалы: silver, gold, stone, beads
+    description: "Классический жемчуг",   // краткое описание
+    image: "img/12.jpg"   // путь к фото в папке img
+},
+{
+    id: 12,                           // номер товара (новый, уникальный)
+    name: "Небесная гармония",          // название
+    category: "necklaces",               // категория: rings, earrings, bracelets, necklaces
+    price: 2500,                     // цена
+    oldPrice: 4000,                  // старая цена (если есть скидка, иначе null)
+    material: ["silver","stone"],   // материалы: silver, gold, stone, beads
+    description: "Колье из лазурита",   // краткое описание
+    image: "img/13.jpg"   // путь к фото в папке img
+}
 ];
+
+// Состояние фильтров и сортировки
+let filters = {
+    priceMin: 0,
+    priceMax: 20000,
+    materials: []
+};
+let currentSort = "default";
 
 // Функция для получения параметра из URL
 function getCategoryFromURL() {
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get('category');
+}
+
+// Функция для получения параметра sale из URL (для акции)
+function getSaleFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('sale') === 'true';
+}
+
+// Применение фильтра по цене
+function applyPriceFilter(products) {
+    return products.filter(product => 
+        product.price >= filters.priceMin && product.price <= filters.priceMax
+    );
+}
+
+// Применение фильтра по материалам
+function applyMaterialFilter(products) {
+    if (filters.materials.length === 0) return products;
+    
+    return products.filter(product => 
+        product.material.some(m => filters.materials.includes(m))
+    );
+}
+
+// Сортировка товаров
+function applySort(products) {
+    const sorted = [...products];
+    switch(currentSort) {
+        case "price-asc":
+            return sorted.sort((a, b) => a.price - b.price);
+        case "price-desc":
+            return sorted.sort((a, b) => b.price - a.price);
+        case "name-asc":
+            return sorted.sort((a, b) => a.name.localeCompare(b.name));
+        default:
+            return sorted.sort((a, b) => a.id - b.id);
+    }
 }
 
 // Функция отрисовки товаров
@@ -58,17 +183,38 @@ function renderProducts() {
         return;
     }
     
-    // Получаем категорию из URL
+    // Получаем параметры из URL
     const categoryFilter = getCategoryFromURL();
+    const saleFilter = getSaleFromURL();
     
-    // Фильтруем товары
+    // Фильтруем по категории
     let filteredProducts = [...productsData];
     if (categoryFilter && categoryFilter !== 'all') {
         filteredProducts = filteredProducts.filter(p => p.category === categoryFilter);
     }
     
+    // Фильтруем по акции (показываем только товары со скидкой)
+    if (saleFilter) {
+        filteredProducts = filteredProducts.filter(p => p.oldPrice !== null);
+    }
+    
+    // Фильтруем по цене
+    filteredProducts = applyPriceFilter(filteredProducts);
+    
+    // Фильтруем по материалам
+    filteredProducts = applyMaterialFilter(filteredProducts);
+    
+    // Сортируем
+    filteredProducts = applySort(filteredProducts);
+    
     if (filteredProducts.length === 0) {
-        container.innerHTML = '<div class="empty-products"><i class="fas fa-search"></i><h3>Товары не найдены</h3><p>В этой категории пока нет товаров</p></div>';
+        let message = '';
+        if (saleFilter) {
+            message = '<div class="empty-products"><i class="fas fa-tag"></i><h3>Акционных товаров нет</h3><p>В ближайшее время появятся новые скидки!</p></div>';
+        } else {
+            message = '<div class="empty-products"><i class="fas fa-search"></i><h3>Товары не найдены</h3><p>Попробуйте изменить параметры фильтрации</p></div>';
+        }
+        container.innerHTML = message;
         if (countSpan) countSpan.textContent = "Показано: 0 товаров";
         return;
     }
@@ -92,7 +238,6 @@ function renderProducts() {
                         <i class="fas fa-shopping-bag"></i>
                     </button>
                 </div>
-                <button class="btn-details" onclick="viewDetails(${product.id})">Подробнее</button>
             </div>
         </div>
     `).join('');
@@ -116,7 +261,6 @@ function getCategoryName(category) {
 
 function updateFilterUI(category) {
     if (category && category !== 'all') {
-        // Обновляем чекбоксы
         const allCheckbox = document.getElementById('filter-all');
         if (allCheckbox) allCheckbox.checked = false;
         
@@ -133,19 +277,67 @@ function addToCart(productId) {
     updateCartCount();
 }
 
-function viewDetails(productId) {
-    alert(`Страница товара №${productId} будет здесь`);
-}
-
 function updateCartCount() {
     const cart = JSON.parse(localStorage.getItem('cart') || '[]');
     const cartCountElement = document.getElementById('cart-count');
     if (cartCountElement) cartCountElement.textContent = cart.length;
 }
 
-// Обработчики фильтров
+// Настройка фильтра по цене
+function setupPriceFilter() {
+    const minSlider = document.getElementById('price-min');
+    const maxSlider = document.getElementById('price-max');
+    const minVal = document.getElementById('min-price-val');
+    const maxVal = document.getElementById('max-price-val');
+    
+    if (!minSlider || !maxSlider) return;
+    
+    function updatePriceRange() {
+        const minPrice = parseInt(minSlider.value);
+        const maxPrice = parseInt(maxSlider.value);
+        
+        if (minVal) minVal.textContent = minPrice;
+        if (maxVal) maxVal.textContent = maxPrice;
+        
+        filters.priceMin = minPrice;
+        filters.priceMax = maxPrice;
+        renderProducts();
+    }
+    
+    minSlider.addEventListener('input', updatePriceRange);
+    maxSlider.addEventListener('input', updatePriceRange);
+}
+
+// Настройка фильтра по материалам
+function setupMaterialFilter() {
+    const materialCheckboxes = document.querySelectorAll('.material-filter');
+    
+    materialCheckboxes.forEach(cb => {
+        cb.addEventListener('change', (e) => {
+            const value = e.target.value;
+            if (e.target.checked) {
+                filters.materials.push(value);
+            } else {
+                filters.materials = filters.materials.filter(m => m !== value);
+            }
+            renderProducts();
+        });
+    });
+}
+
+// Настройка сортировки
+function setupSorting() {
+    const sortSelect = document.getElementById('sort-select');
+    if (!sortSelect) return;
+    
+    sortSelect.addEventListener('change', (e) => {
+        currentSort = e.target.value;
+        renderProducts();
+    });
+}
+
+// Обработчики фильтров категорий
 function setupFilters() {
-    // Фильтр по категориям
     const categoryFilters = document.querySelectorAll('.category-filter');
     categoryFilters.forEach(cb => {
         cb.addEventListener('change', (e) => {
@@ -164,7 +356,6 @@ function setupFilters() {
         });
     });
     
-    // Кнопка сброса
     const resetBtn = document.getElementById('reset-filters');
     if (resetBtn) {
         resetBtn.addEventListener('click', () => {
@@ -176,6 +367,9 @@ function setupFilters() {
 // Запуск
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Страница каталога загружена");
+    setupPriceFilter();
+    setupMaterialFilter();
+    setupSorting();
     renderProducts();
     updateCartCount();
     setupFilters();

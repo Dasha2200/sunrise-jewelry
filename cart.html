@@ -17,6 +17,8 @@
                 <span>Sunrise Jewelry</span>
             </div>
             <div class="nav-links">
+		<p><i class="fas fa-envelope"></i>  sunrise-jewelry@yandex.ru
+		<p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
                 <a href="index.html">Главная</a>
                 <a href="catalog.html">Каталог</a>
                 <a href="about.html">О мастере</a>
@@ -93,9 +95,12 @@
                     <input type="text" name="Имя" required>
                 </div>
                 <div class="form-group">
-                    <label>Телефон *</label>
-                    <input type="tel" name="Телефон" required>
-                </div>
+    		<label>Телефон *</label>
+   		 <input type="tel" name="Телефон" required 
+         	  pattern="[0-9]{11}" 
+       		    maxlength="11"
+        	   title="Введите 11 цифр без пробелов">
+		</div>
                 <div class="form-group">
                     <label>Email *</label>
                     <input type="email" name="Email" required>

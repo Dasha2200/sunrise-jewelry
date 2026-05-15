@@ -1,9 +1,17 @@
 // Данные товаров
 const productsData = [
-    { id: 1, name: "Кольцо «Лунный свет»", price: 3500, image: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=200" },
-    { id: 2, name: "Серьги «Морская волна»", price: 4800, image: "https://images.unsplash.com/photo-1598300056393-4aac492f4344?w=200" },
-    { id: 3, name: "Браслет «Роза ветров»", price: 2900, image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=200" },
-    { id: 4, name: "Колье «Северное сияние»", price: 12500, image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=200" }
+    { id: 1, name: "Кольцо «Лунный свет»", price: 3500, image: "img/6.jpg" },
+    { id: 2, name: "Серьги «Морская волна»", price: 4800, image: "img/7.jpg" },
+    { id: 3, name: "Браслет «Роза ветров»", price: 2900, image: "img/8.jpg" },
+    { id: 4, name: "Колье «Северное сияние»", price: 12500, image: "img/9.jpg" },
+    { id: 5, name: "Кольцо «Кольцо с пионом»", price: 2900, image: "img/5.jpg" },
+    { id: 6, name: "Серьги «Серги с пионом»", price: 4900, image: "img/3.jpg" },
+    { id: 7, name: "Браслет «Браслет с пионом»", price: 4900, image: "img/2.jpg" },
+    { id: 8, name: "Подвеска «Подвеска с пионом»", price: 2900, image: "img/4.jpg" },
+    { id: 9, name: "Колье «Звёздный круг»", price: 3750, image: "img/11.jpg" },
+    { id: 10, name: "Кольцо «Золотая нить»", price: 5000, image: "img/10.jpg" },
+    { id: 11, name: "Колье «Жемчужная классика»", price: 2500, image: "img/12.jpg" },
+    { id: 12, name: "Колье «Небесная гармония»", price: 2500, image: "img/13.jpg" },
 ];
 
 // Сохраняем товары в localStorage
