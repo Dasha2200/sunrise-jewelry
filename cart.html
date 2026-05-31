@@ -17,8 +17,8 @@
                 <span>Sunrise Jewelry</span>
             </div>
             <div class="nav-links">
-		<p><i class="fas fa-envelope"></i>  sunrise-jewelry@yandex.ru
-		<p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                <p><i class="fas fa-envelope"></i>  sunrise-jewelry@yandex.ru</p>
+                <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
                 <a href="index.html">Главная</a>
                 <a href="catalog.html">Каталог</a>
                 <a href="about.html">О мастере</a>
@@ -86,36 +86,37 @@
             <span class="close-modal">&times;</span>
             <h2>Оформление заказа</h2>
             
-            <form action="https://formspree.io/f/maqvadpl" method="POST">
-                <input type="hidden" name="_subject" value="Новый заказ с Sunrise Jewelry!">
-                <input type="hidden" name="_next" value="https://dasha2200.github.io/sunrise-jewelry/thank-you.html">
-                
+            <!-- ФОРМА ОТПРАВЛЯЕТ ДАННЫЕ НА cart.php (ЛОКАЛЬНЫЙ СЕРВЕР) -->
+            <form action="cart.php" method="POST">
                 <div class="form-group">
                     <label>Ваше имя *</label>
-                    <input type="text" name="Имя" required>
+                    <input type="text" name="name" required>
                 </div>
                 <div class="form-group">
-    		<label>Телефон *</label>
-   		 <input type="tel" name="Телефон" required 
-         	  pattern="[0-9]{11}" 
-       		    maxlength="11"
-        	   title="Введите 11 цифр без пробелов">
-		</div>
+                    <label>Телефон *</label>
+                    <input type="tel" name="phone" required 
+                           pattern="[0-9]{11}" 
+                           maxlength="11"
+                           title="Введите 11 цифр без пробелов">
+                </div>
                 <div class="form-group">
                     <label>Email *</label>
-                    <input type="email" name="Email" required>
+                    <input type="email" name="email" required>
                 </div>
                 <div class="form-group">
                     <label>Адрес доставки *</label>
-                    <input type="text" name="Адрес доставки" required>
+                    <input type="text" name="address" required>
                 </div>
                 <div class="form-group">
                     <label>Комментарий к заказу</label>
-                    <textarea name="Комментарий" rows="3"></textarea>
+                    <textarea name="comment" rows="3"></textarea>
                 </div>
                 
-                <input type="hidden" name="Состав заказа" id="order-items-hidden">
-                <input type="hidden" name="Итого" id="total-hidden">
+                <!-- Скрытые поля для состава заказа -->
+                <input type="hidden" name="order_items" id="order-items-hidden">
+                <input type="hidden" name="total" id="total-hidden">
+                <!-- ДОБАВЛЕННОЕ СКРЫТОЕ ПОЛЕ ДЛЯ КОРЗИНЫ -->
+                <input type="hidden" name="cart_items" id="cart-items-json">
                 
                 <button type="submit" class="btn-submit">Отправить заказ</button>
             </form>
@@ -132,7 +133,7 @@
                         <i class="fas fa-gem"></i>
                         <span>Sunrise Jewelry</span>
                     </div>
-                    <p>Украшения ручной работы с 2017 года</p>
+                    <p>Украшения ручной работы с 2019 года</p>
                 </div>
                 <div class="footer-section">
                     <h4>Контакты</h4>
@@ -142,14 +143,13 @@
                 <div class="footer-section">
                     <h4>Соцсети</h4>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-vk"></i></a>
-                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="https://vk.com/sterlitamak_adm"><i class="fab fa-vk"></i></a>
+                        <a href="https://t.me/sterlitamakadm"><i class="fab fa-telegram"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Мастерская Sunrise Jewelry. Дипломный проект.</p>
+                <p>&copy; 2026 Мастерская Sunrise Jewelry.</p>
             </div>
         </div>
     </footer>
